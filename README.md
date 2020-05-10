@@ -1,2 +1,12 @@
-# parallel-distributed-processing-assignments
+# Parallel Distributed Processing Assignments
 Assignments that I made for the subject "Parallel Distributed Processing" in my Big Data &amp; AI minor
+
+## Assignment 1
+This Python script made with MRJob takes a data file containing user ratings for movies and counts how many ratings each movie received. It then sorts the list by the count of the ratings.
+
+### Usage
+Run this with all available nodes within Hadoop as follows:  
+`sudo python ass1.py -r hadoop --hadoop-streaming-jar /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar u.data`
+
+or run this locally for testing:  
+`python ass1.py u.data`
